@@ -1,12 +1,11 @@
 from duck import Duck
-from quacking import simple_quacking, advanced_quacking, no_quacking
-from flying import jet_flying, no_flying, simple_flying
+from quack_behavior import SimpleQuacking, AdvancedQuacking, NoQuacking
+from fly_behavior import SimpleFlying, JetFlying, NoFlying
 
 if __name__ == "__main__":
-    wild_duck = Duck(simple_flying.SimpleFlying,
-                     advanced_quacking.AdvancedQuacking)
-    city_duck = Duck(jet_flying.JetFlying, simple_quacking.SimpleQuacking)
-    rubber_duck = Duck(no_flying.NoFlying, no_quacking.NoQuacking)
+    wild_duck = Duck(SimpleFlying, AdvancedQuacking)
+    city_duck = Duck(JetFlying, SimpleQuacking)
+    rubber_duck = Duck(NoFlying, NoQuacking)
 
     wild_duck.fly()
     city_duck.fly()
