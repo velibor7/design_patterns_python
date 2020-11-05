@@ -1,4 +1,4 @@
-from weather_station import WeatherStation, ObservableInterface
+from weather_station import WeatherStation
 from displays import PhoneDisplay, WindowDisplay
 
 if __name__ == "__main__":
